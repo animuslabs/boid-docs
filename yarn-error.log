@@ -1,0 +1,55 @@
+Arguments: 
+  /Users/boidcom/.nvm/versions/node/v16.16.0/bin/node /Users/boidcom/.nvm/versions/node/v16.16.0/bin/yarn
+
+PATH: 
+  /Users/boidcom/.nvm/versions/node/v16.16.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/boidcom/.nvm/versions/node/v16.16.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/boidcom/Dev/boid/boid-docs/package.json: Unexpected token } in JSON at position 533
+      at JSON.parse (<anonymous>)
+      at /Users/boidcom/.nvm/versions/node/v16.16.0/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/Users/boidcom/.nvm/versions/node/v16.16.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /Users/boidcom/.nvm/versions/node/v16.16.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "boid-docs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "devDependencies": {
+      "vitepress": "^1.0.0-alpha.4",
+      "vue": "^3.2.37",
+      "eslint": "^8.19.0",
+      "eslint-config-standard": "^17.0.0",
+      "eslint-plugin-import": "^2.26.0",
+      "eslint-plugin-n": "^15.2.3",
+      "eslint-plugin-promise": "^6.0.0",
+      "@typescript-eslint/eslint-plugin": "^5.30.4",
+      "@typescript-eslint/parser": "^5.30.4",
+      "ts-node": "^10.7.0",
+      "typescript": "^4.6.2",
+      "list-files-in-dir": "^0.1.5",
+    },
+    "scripts": {
+      "docs:dev": "vitepress dev docs",
+      "docs:build": "vitepress build docs",
+      "docs:serve": "vitepress serve docs"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
