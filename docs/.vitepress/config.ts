@@ -4,8 +4,9 @@ import {listFiles} from 'list-files-in-dir';
 async function makeNavItems(dir:string) {
   const results = (await listFiles('docs/'+dir)).map(el => {
     const split = el.split('/')
-    const file = split[split.length -1].split('.')[0]
-    return {text:file,link:'/'+dir+'/'+file}
+    let file = split[split.length -1].split('.')[0]
+    const text = file.charAt(0).toUpperCase() + file.slice(1);
+    return {text,link:'/'+dir+'/'+file}
   })
   console.log(results);
   return results
@@ -18,6 +19,7 @@ async function setupConfig(){
     lastUpdated: true,
     themeConfig:{
       siteTitle:'Boid Docs',
+      logo:{src:"/images/boid-basic.png"},
       nav: [
         { text: 'Home', link: '/' },
         {
