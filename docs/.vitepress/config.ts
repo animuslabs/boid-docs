@@ -1,25 +1,29 @@
+// const { defineConfig } = require('vitepress')
 import { defineConfig } from 'vitepress'
-import {listFiles} from 'list-files-in-dir';
+import { listFiles } from 'list-files-in-dir';
 
-async function makeNavItems(dir:string) {
-  const results = (await listFiles('docs/'+dir)).map(el => {
+async function makeNavItems(dir: string) {
+  const results = (await listFiles('docs/' + dir)).map(el => {
     const split = el.split('/')
-    let file = split[split.length -1].split('.')[0]
+    let file = split[split.length - 1].split('.')[0]
     const text = file.charAt(0).toUpperCase() + file.slice(1);
-    return {text,link:'/'+dir+'/'+file}
+    return { text, link: '/' + dir + '/' + file }
   })
   console.log(results);
   return results
 }
 
-async function setupConfig(){
+async function setupConfig() {
+
   return defineConfig({
+    markdown: { anchor: { permalink: true } },
+
     title: 'Boid Docs',
     description: 'boid.com',
     lastUpdated: true,
-    themeConfig:{
-      siteTitle:'Boid Docs',
-      logo:{src:"/images/boid-basic.png"},
+    themeConfig: {
+      siteTitle: 'Boid Docs',
+      logo: { dark: "/boid-basic.png", light: "/boid-basic-lite.png" },
       nav: [
         { text: 'Home', link: '/' },
         {
