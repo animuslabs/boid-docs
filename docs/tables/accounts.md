@@ -1,8 +1,11 @@
 # Accounts Table
 Every Boid user needs a row in the accounts table. The accounts table reserves a unique boid_id, tracks power, staking, authentication, team and any other unique elements about a boid user. Many users could use Boid entirely using only their Boid Account + the built in key authentication without any need for a native chain account (however it's easy for them to attach a native account when ready).
-[Source File](https://github.com/animuslabs/boid-system-ts/blob/master/assembly/tables/accounts.ts)
 
+[Source](https://github.com/animuslabs/boid-system-ts/blob/master/assembly/tables/accounts.ts)
+\
 Scope: `boid`
+\
+Index: `boid_id`
 
 
 ## Table Structure

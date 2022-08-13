@@ -1,8 +1,8 @@
 # Config Table
-The config table stores all the global configuration data.
-\
-[Source](https://github.com/animuslabs/boid-system-ts/blob/master/assembly/tables/config.ts)
+The config table stores all the global configuration data. The table can only be updated by the contract authority.
 
+[Source](https://github.com/animuslabs/boid-system-ts/blob/master/assembly/tables/config.ts)
+\
 Scope: `boid`
 \
 Index: none (Singleton)
