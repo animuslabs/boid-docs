@@ -60,7 +60,7 @@ async function setupConfig() {
         },
         {
 
-          text:"Additional Details",
+          text:"More",
           items: [
             { text: 'Notifications', link: '/notifications' },
             { text: 'Functions', link: '/functions' },
