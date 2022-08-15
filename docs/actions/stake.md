@@ -26,7 +26,7 @@ contract or `boid_id` auth required
 initiates a transfer of `quantity` of BOID from the system contract to `stake.boid`
 
 ## `stake.deleg`
-delegate stake by moving it from your self_staked bucket to the dedicated `stakes` table. Delegating enables you to specify another boid account that should receive the benefit of your stake while the owner account still retains ownership. Additionally delegating staked BOID unlocks the ability to lock tokens until some round in the future. This enables very long lockup periods for specific benefits as well as increased security(self delegation is allowed). Delegated stakes have a special limitation in that they must be specified in units of 10k BOID, this reduces RAM costs and helps prevent spam.
+Delegate stake by moving it from your self_staked bucket to the dedicated `stakes` table. Delegating enables you to specify another boid account that should receive the benefit of your stake while the owner account still retains ownership. Additionally delegating staked BOID unlocks the ability to lock tokens until some round in the future. This enables very long lockup periods for specific benefits as well as increased security(self delegation is allowed). Delegated stakes have a special limitation in that they must be specified in units of 10k BOID, this reduces RAM costs and helps to prevent spam.
 
 **Input Parameters**
 ```ts
@@ -47,11 +47,11 @@ requires contract or `from_boid_id` auth
 - `lock_until_round` must be greater than the minimum delegated stake length defined in `config.stake.extra_stake_min_locked_rounds`
 
 **Table Updates**
-- `from_boid_id` boid account `stake.self_staked` is reduced by `quantity` * 10,000
+- `from_boid_id` boid account `stake.self_staked` is reduced by `quantity` * 10000
 - `to_boid_id` boid account `stake.received_delegated_stake` is incremented by `quantity`
 
 ## `unstke.deleg`
-returns a delegated stake back to the `self_stake` bucket. Delegated stake can't be unstaked if it's still locked, but can remain staked as long as the owner desires.
+Returns a delegated stake back to the `self_stake` bucket. Delegated stake can't be unstaked if it's still locked, but can remain staked as long as the owner desires.
 
 **Input Parameters**
 ```ts
@@ -70,7 +70,7 @@ requires contract or `stake.from_boid_id` auth
 - removes the target delegated stake row from the `stakes` table
 
 ## `unstake.init`
-start the process of unstaking, which moves tokens from `self_staked` to `balance` after a delay. During the delay the tokens are still counted as staked.
+Start the process of unstaking, which moves tokens from `self_staked` to `balance` after a delay. During the delay the tokens are still counted as staked.
 
 **Input Parameters**
 ```ts
@@ -92,7 +92,7 @@ add quantity and unlock round data to `account.stake.unstaking`
 
 
 ## `unstake.stop`
-cancels a currently in progress unstake
+Cancels 'unstake' currently in progress
 
 **Input Parameters**
 ```ts

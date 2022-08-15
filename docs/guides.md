@@ -4,7 +4,7 @@
 To create a boid account a sponsor needs to call `account.buy` to pay for an account. UI will be provided to make this easy.
 
 ## Fund Boid Account
-to add liquid BOID to your account you can send (whole quantities) of BOID to the `boid` system contract with the memo formatted like "deposit boid_id=yourboididhere"
+To add liquid BOID to your account you can send (whole quantities) of BOID to the `boid` system contract with the memo formatted like "deposit boid_id=yourboididhere"
 
 ## Stake Boid
 After depositing liquid BOID, you can call `stake` to move those funds to your self_staked balance.

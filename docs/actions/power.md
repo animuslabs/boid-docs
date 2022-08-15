@@ -2,7 +2,7 @@
 Actions related to Boid Power
 
 ## `power.add`
-adds power to a boid account. This action requires contract authority and usually will be called by other system level boid contracts operated by oracles reporting the computing power generated and other data sources like PowerPools.
+Adds power to a boid account. This action requires contract authority and usually will be called by other system level boid contracts operated by oracles reporting the computing generated power and other data sources like PowerPools.
 
 **Input Parameters**
 ```ts

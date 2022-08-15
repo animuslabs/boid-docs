@@ -1,11 +1,11 @@
 
 # Auth Actions
-This page covers all actions related to key authentication. Key based authentication means that users don't need a wallet to authorize actions for their boid account. A private key can be stored in the frontend which signs actions the user wishes to perform. The actions are signed with the stored key and the signed message is sent to a special API server hosted by boid validators. The API server can then place the signed message inside a full eosio transaction and push the transaction to chain (the validator will handle chain resouces needed). Storing keys in the browser isn't always safe so for this reason the contract doesn't allow key authentication to be used for withdrawing funds or sending funds to other boid users or modifying owner accounts. To transfer tokens the user will need to sign a transaction using their full eosio wallet like Anchor as a linked owner account.
+This page covers all actions related to key authentication. Key based authentication means that users don't need a wallet to authorize actions for their boid account. A private key can be stored in the frontend which signs actions the user wishes to perform. The actions are signed with the stored key and the signed message is sent to a special API server hosted by Boid validators. The API server can then place the signed message inside a full EOSIO transaction and push the transaction to chain (the validator will handle chain resouces needed). Storing keys in the browser isn't always safe so for this reason the contract doesn't allow key authentication to be used for withdrawing funds or sending funds to other Boid users or modifying owner accounts. To transfer tokens the user will need to sign a transaction using their full EOSIO wallet like Anchor as a linked owner account.
 
 [Source](https://github.com/animuslabs/boid-system-ts/blob/master/assembly/actions/10-auth.ts)
 
 ## `auth`
-This is the primary method for signed actions to be pushed. The boid validator node will take the data from the client and push it onto the chain. The contract then validates the signature. The signature also include a nonce, which prevents transaction replays(the signed actions are no-longer valid after being transacted since the nonce has been incremented).
+This is the primary method for signed actions to be pushed. The Boid validator node will take the data from the client and push it onto the chain. The contract then validates the signature. The signature also include a nonce, which prevents transaction replays(the signed actions are no-longer valid after being transacted since the nonce has been incremented).
 
 **Input Parameters**
 ```ts

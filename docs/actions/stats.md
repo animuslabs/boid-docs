@@ -1,5 +1,5 @@
 # Stats actions
-actions related to Stats. In the future there will be functions that read the stats table rows to adjust inflation rates.
+Actions related to Stats. In the future there will be functions that read the stats table rows to adjust inflation rates.
 
 
 ## `stats.clean`

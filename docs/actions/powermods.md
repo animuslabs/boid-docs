@@ -2,7 +2,7 @@
 Actions relating to PowerMods
 
 ## `pwrmod.new`
-for the system to register a new PowerMod
+For the system to register a new PowerMod
 
 **Input Parameters**
 ```ts
@@ -57,7 +57,7 @@ boid_id:Name
 pwrmod_index:i32
 ```
 **Authentication**\
-Requires the contract or account auth if the mod isn't expired.
+Requires the contract or account auth if the mod hasn't expired.
 
 **Validation**\
 `pwrmod_index` must be valid

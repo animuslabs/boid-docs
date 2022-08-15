@@ -1,5 +1,5 @@
 # Transfer actions
-actions related to token transfers
+Actions related to token transfers
 
 ## `withdraw`
 Withdraw BOID tokens from a liquid balance to a native account

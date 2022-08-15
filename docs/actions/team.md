@@ -1,5 +1,5 @@
 # Team Actions
-actions related to teams. Some functionality of teams isn't implemented yet. In the future users should be able to purchase a team and customize it how they like. Additionally teams can accumulate staked BOID but can't yet unstake or spend it. In the future teams could spend tokens to purchase team exclusive offers as well as interact with Boid Universe apps. Managers don't yet have any functions but the idea is that they would have some limited permissions and trusted by the team owner for day to day management and interacting with boid universe etc.
+Actions related to teams. Some functionality of teams isn't implemented yet. In the future users should be able to purchase a team and customize it how they like. Additionally teams can accumulate staked BOID but can't yet unstake or spend it. In the future teams could spend tokens to purchase team exclusive offers as well as interact with Boid Universe apps. Managers don't yet have any functions but the idea is that they would have some limited permissions and trusted by the team owner for day to day management and interacting with Boid Universe etc.
 
 ## `team.change`
 allows a user to change teams
