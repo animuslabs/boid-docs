@@ -1,4 +1,3 @@
-// const { defineConfig } = require('vitepress')
 import { defineConfig } from 'vitepress'
 import { listFiles } from 'list-files-in-dir';
 
@@ -38,23 +37,35 @@ async function setupConfig() {
       ],
       sidebar: [
         {
-          text: 'Guide',
+          collapsible: false,
+          text: 'Getting Started',
           items: [
-            { text: 'Introduction', link: '/introduction' },
-            { text: 'Getting Started', link: '/getting-started' },
+            { text: 'Intro', link: '/' },
+            { text: 'Terminology', link: '/terms' },
+            { text: 'Guides', link: '/guides' },
+            { text: 'FAQ', link: '/faq' },
           ]
         },
         {
+          collapsed: true,
+          collapsible:true,
+          text: 'Actions',
+          items: await makeNavItems('actions')
+        },
+        {
+          collapsed: true,
+          collapsible:true,
           text: 'Tables',
           items: await makeNavItems('tables')
         },
         {
-          text: 'Actions',
+
+          text:"Additional Details",
           items: [
-            { text: 'Introduction', link: '/introduction' },
-            { text: 'Getting Started', link: '/getting-started' },
+            { text: 'Notifications', link: '/notifications' },
+            { text: 'Functions', link: '/functions' },
           ]
-        }
+        },
       ]
     },
 
