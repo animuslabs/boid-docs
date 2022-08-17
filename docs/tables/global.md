@@ -1,5 +1,5 @@
 # Global Table
-The global table tracks the total quantities of values like boid power and staked/liquid balances. Actions that modify this data have logic to update this table to ensure it's always sycronized.
+The global table tracks the total quantities of values like boid power and staked/liquid balances. Actions that modify this data have logic to update this table to ensure it's always synchronized.
 
 [Source](https://github.com/animuslabs/boid-system-ts/blob/master/assembly/tables/global.ts)
 \

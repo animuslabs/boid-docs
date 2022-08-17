@@ -1,5 +1,5 @@
 # Offers Table
-The Offers table enables exchange of things for other things. Offers can only be registered by the contract authority but any boid_id can take advantage of an offer so long as they fit the offer requirements.
+The Offers table enables exchange of things for other things. Offers can only be registered by the contract authority but any boid_id can take advantage of an offer as long as they fit the offer requirements.
 
 [Source](https://github.com/animuslabs/boid-system-ts/blob/master/assembly/tables/offers.ts)
 \

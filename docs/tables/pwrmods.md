@@ -16,7 +16,7 @@ class PwrMod extends Table {
   pwr_multiplier: u8
   // adds power to the account each round, added during claim
   pwr_add_per_round: u16
-  //  when the powermod is added to an account, it will expired after this many rounds
+  //  when the powermod is added to an account, it will expire after this many rounds
   expire_after_elapsed_rounds: u16
   // each time power.claim is called on an account with a powermod,
   // the mod aggregate capacity will decrease based on the quantity of power being decayed during that claim.

@@ -40,7 +40,7 @@ diverted_to_sponsor:u16
 // amount of power the account actually earned
 power_increased:u16
 // the origin of power, it's just to tell the difference between normal power add and power from sponsorship
-orign:Name
+origin:Name
 ```
 
 ## `power.claim`
