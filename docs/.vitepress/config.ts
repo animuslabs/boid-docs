@@ -1,10 +1,12 @@
 import { defineConfig } from 'vitepress'
 import { listFiles } from 'list-files-in-dir';
+import path from 'path'
 
-async function makeNavItems(dir: string) {
-  const results = (await listFiles('docs/' + dir)).map(el => {
-    const split = el.split('/')
-    let file = split[split.length - 1].split('.')[0]
+
+async function makeNavItems(dir: string[]) {
+  const results = (await listFiles(path.join('./docs', ...dir))).map(el => {
+    const file = path.basename(el).split('.')[0]
+    console.log('dir:', file);
     const text = file.charAt(0).toUpperCase() + file.slice(1);
     return { text, link: '/' + dir + '/' + file }
   })
@@ -48,19 +50,19 @@ async function setupConfig() {
         },
         {
           collapsed: true,
-          collapsible:true,
+          collapsible: true,
           text: 'Actions',
-          items: await makeNavItems('actions')
+          items: await makeNavItems(['actions'])
         },
         {
           collapsed: true,
-          collapsible:true,
+          collapsible: true,
           text: 'Tables',
-          items: await makeNavItems('tables')
+          items: await makeNavItems(['tables'])
         },
         {
 
-          text:"More",
+          text: "More",
           items: [
             { text: 'Notifications', link: '/notifications' },
             { text: 'Functions', link: '/functions' },
