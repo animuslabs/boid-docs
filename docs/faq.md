@@ -14,7 +14,7 @@ Security is a top priority for Boid. We only work with the most reputable distri
 
 When did BOID start?
 
-Boid was created by the founder John H.z+
+Boid was created by the founder John Heeter in 2017.
 
 
 Why was Boid Created?
