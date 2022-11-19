@@ -12,7 +12,10 @@ Is Boid Safe?
 
 Security is a top priority for Boid. We only work with the most reputable distributed science projects, and we architected the Boid app such that applications use least permissions aspects. It is also worth noting that BOINC (the original tech behind Boid) has been commonly used since the late 90s with a perfect security track record due to a robust security architecture. And with our move to Folding at Home, 
 
-When 
+When did BOID start?
+
+Boid was created by the founder John H.z+
+
 
 Why was Boid Created?
 
