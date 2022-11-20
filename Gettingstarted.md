@@ -6,7 +6,7 @@ Once you have installed F@H the first thing to do is input your user name and te
 
 How do I get paid?
 
-At this time BOID will continue twards a full Boid deployment on Telos in addition to EOS, and are currently paying out work fomr F@H on the Telos chain at periodic intervals
+At this time BOID will continue twards a full deployment on Telos in addition to EOS, and are currently paying out work from Folding at Home on the Telos chain at periodic intervals.
 
 
 How do I move my BOID between chains:
