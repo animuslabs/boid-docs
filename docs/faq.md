@@ -24,4 +24,4 @@ A computer simulation of birds in a flock. Each “boid” follows simple rules 
 
 How to mine BOID?
 
-The Boid application runs in the background, transparently taking advantage of unused computing power. The Boid application connects to your Boid account, and can tap into your CPU, GPU, and HDD space automatically, to maximize your Boid Power rating. You can install the Boid app on as many of your devices as you like. Desktop computers with dedicated GPUs tend to perform the best, but laptops can also work as well. You can even rent a specialised service in the cloud with BOID Power to mine BOID.
+The Boid application runs in the background, transparently taking advantage of unused computing power. The Boid application connects to your Boid account, and can tap into your resources automatically, to maximize your Boid Power rating. You can install the Boid app on as many of your devices as you like. Desktop computers with dedicated GPUs tend to perform the best, but laptops can also work as well. You can even rent a specialised service in the cloud with BOID Power to mine BOID.
